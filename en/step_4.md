@@ -1,17 +1,54 @@
-## Load data from a file
+<h2 class="c-project-heading--task">Load data from a file</h2>
+--- task ---
+Load large data sets from a file to save a lot of typing!
+--- /task ---
 
-<div style="display: flex; flex-wrap: wrap">
-<div style="flex-basis: 200px; flex-grow: 1; margin-right: 15px;">
+<h2 class="c-project-heading--explainer">PROBABLY UNNECCESARY TITLE</h2>
+
 The chart looks good! But, almost 150 nations have competed in the Olympics. To chart them, you're going to load their data from a file. It will save a lot of typing!
-</div>
-<div>
-![A bar chart showing the medal counts of many nations. Information appears when the mouse hovers over a bar. Bars disappear as the names of nations are clicked.](images/adjust_chart.gif){:width="300px"}
-</div>
+
+<div class="c-project-code">
+--- code ---
+---
+language: python
+filename: main.py
+line_numbers: true
+line_number_start: 
+line_highlights: 
+---
+CODE THEY WRITE HERE
+--- /code ---
 </div>
 
-<p style="border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;">
-<span style="color: #0faeb0">**Computers and data**</span> You're just starting to learn how to get your computer work with data. Computers can do amazing things with the right data. And they can read more data in minutes than a human could in years. Python is one of the best programming languages there is for data. Python is what the YouTube algorithm, that picks the videos to show you, is made with.
-</p>
+<div class="c-project-output">
+<pre>WHAT THEY SHOULD SEE IF OUTPUT IS TEXT - OTHERWISE USE IMAGE</pre>
+</div>
+
+<div class="c-project-callout c-project-callout--tip">
+
+### Tip
+
+BULLET POINT TIPS HERE (OPTIONAL)
+
+</div>
+
+<div class="c-project-callout c-project-callout--debug">
+
+### Debugging
+
+BULLET POINT DEBUG POINTS HERE (OPTIONAL)
+
+</div>
+
+
+
+
+
+
+
+
+
+
 
 --- task ---
 
