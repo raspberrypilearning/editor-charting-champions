@@ -13,7 +13,7 @@ Create three lists of data to show on your chart.
 
 Each list will store a nation's name and the number of medals won by that nation. 
 
-<div class="c-project-code">
+<div class="c-project-code"> 
 --- code ---
 ---
 language: python
