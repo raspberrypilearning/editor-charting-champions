@@ -1,14 +1,30 @@
-title: Project title in sentence case
+---
+title: Charting champions
 hero_image: images/banner.png
-description: A short description of the project
-listed: false
-pdf: false
+description:
+  Discover the power of lists in Python by creating an interactive chart
+  of Olympic medals
+meta_title: Python coding projects for kids and teens | Charting champions
+meta_description: Learn Python with the Raspberry Pi Foundation's coding projects for kids and teens. Discover the power of lists in Python by creating a chart of Olympic medals.
+version: 4
+listed: true
+copyedit: true
+last_tested: "2021-10-07"
 steps:
-  - title: What you will make
-  - title: Step title
+  - title: Step 1
+  - title: Step 2
+  - title: Step 3
     completion:
-      - engaged      
-  - title: Challenge
-    challenge: true
+      - engaged
+  - title: Step 4
+    completion:
+      - internal
+  - title: Quick quiz
+    knowledge_quiz:
+      path: quiz1
+      version: 1
+      questions: 3
+      passing_score: 3
     completion:
       - external
+  - title: Step 5
