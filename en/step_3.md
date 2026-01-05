@@ -1,168 +1,243 @@
-## Load data from a file
+## Make a chart
+
+
+
 
 <div style="display: flex; flex-wrap: wrap">
 <div style="flex-basis: 200px; flex-grow: 1; margin-right: 15px;">
-The chart looks good! But, almost 150 nations have competed in the Olympics. To chart them, you're going to load their data from a file. It will save a lot of typing!
+Create a chart and some lists of data to display on it.
 </div>
 <div>
-![A bar chart showing the medal counts of many nations. Information appears when the mouse hovers over a bar. Bars disappear as the names of nations are clicked.](images/adjust_chart.gif){:width="300px"}
+![A bar chart showing the medals won by the United States, Great Britain, and France.](images/short_list.png){:width="300px"}
 </div>
 </div>
-
-<p style="border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;">
-<span style="color: #0faeb0">**Computers and data**</span> You're just starting to learn how to get your computer work with data. Computers can do amazing things with the right data. And they can read more data in minutes than a human could in years. Python is one of the best programming languages there is for data. Python is what the YouTube algorithm, that picks the videos to show you, is made with.
-</p>
 
 --- task ---
 
-Open the [second starter project](https://editor.raspberrypi.org/en/projects/charting-champions-second-starter){:target="_blank"}. The Raspberry Pi code editor will open in another browser tab.
+Open the [Charting champions starter project](https://editor.raspberrypi.org/en/projects/charting-champions-starter){:target="_blank"}. The Raspberry Pi code editor will open in another browser tab.
 
 If you have a Raspberry Pi account, you can click **Save** to save a copy of the starter code to your library.
+
+If you are not using the code editor in your browser, you will need to download the project files and you may need to install `pygal` before you can import it.
 
 --- collapse ---
 
 ---
-title: Working offline
+title: Offline project files
 ---
 
-You will need `starter2.py` and the `.csv` files for this step.
+Download the project files, unzip them, and store them on your computer. For this step you will need `starter.py`, the other files will be used later in the project.
+
+--- /collapse ---
+
+--- collapse ---
+---
+title: Installing pygal
+---
+
+### On Windows
+In the **Command Prompt** type the following and press the <kbd>Enter</kbd> key:
+
+```
+pip install pygal
+```
+
+Wait for the installation to complete and then continue with the project.
+
+### On a Mac
+In the **Terminal** type the following and press the <kbd>Enter</kbd> key:
+
+```
+pip3 install pygal
+```
+
+Wait for the installation to complete and then continue with the project.
+
+### On Linux, including Raspberry Pi OS
+In the **Terminal** type the following and press the <kbd>Enter</kbd> key:
+
+```
+pip install pygal
+```
+
+Wait for the installation to complete and then continue with the project.
 
 --- /collapse ---
 
 --- /task ---
 
-There are several `.csv` files included in this starter project that contain the data you need for your charts.
-
---- task ---
-
-Open `medals.csv` and look at the data in it. See how each line has a team name and the number of medals they have won, separated by a comma. 
-
-![The Raspberry Pi code editor with medals file highlighted and open, displaying a list of countries and medal numbers seperated with a comma.](images/medals-tab.png)
-
---- /task ---
-
-<div style="border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;">
-<span style="color: #0faeb0">**CSV files**</span> are Comma-Separated Values files. They contain data in rows and columns, like a table. Each line is a row, with commas separating that row's values into columns.
-![A few lines of a csv file.](images/csv_sample.png){:width="200px"}
-</div>
-
-You'll need to turn each line of `medals.csv` into a text string and a number in Python, like in the lists you made.
-
---- task ---
-
-Click on the `main.py` tab and add code to load the file into a variable by using `with open() as`. Then use a `for` loop to `print` each line from the variable.
-
-The `for` loop will let you repeat code. So you will load hundreds of teams to your chart with just a few lines of code!
-
-[[[generic-python-file-read]]]
+The starter project already has some code to import the `pygal` library, which you will use to draw your chart.
 
 --- code ---
 ---
 language: python
 filename: main.py
 line_numbers: true
-line_number_start: 8 
-line_highlights: 9-11
+line_number_start: 1
+line_highlights: 1
+---
+
+from pygal import bar
+
+--- /code ---
+
+### Make a chart
+
+--- task ---
+
+Find the `# Create a chart` comment and add code below it to make a bar chart called `chart`, inside the brackets give your chart a title.
+
+--- code ---
+---
+language: python
+filename: main.py
+line_numbers: true
+line_number_start: 4 
+line_highlights: 5
+---
+# Create a chart
+chart = Bar(title='Olympic medals')
+
+--- /code ---
+
+--- /task ---
+
+--- task ---
+
+Call `chart.render()` to display the chart.
+
+--- code ---
+---
+language: python
+filename: main.py
+line_numbers: true
+line_number_start: 11 
+line_highlights: 12
+---
+# Display the chart
+chart.render()
+--- /code ---
+
+--- /task ---
+
+--- task ---
+
+**Test:** Run your code to see the chart. It will be empty because it doesn't have data yet.
+
+![The words 'Olympic medals' on a black background.](images/empty_chart.png){:width="300px"}
+
+**Debug**: If you see an error about `Bar()` or `chart.render()` being `not defined`:
+
+ - If the error is for `Bar()`, make sure it has an uppercase B at the start, and brackets at the end
+ - If the error is for `chart.render()`, check that it has the `.` between `chart` and `render`, as well as the brackets at the end
+
+**Debug**: If you are not using the Raspberry Pi code editor, and the graph hasn't appeared when you run your code, replace `chart.render()` with `chart.render_in_browser()`.
+
+--- /task ---
+
+### Add some data
+
+Python can store related data as a **list**. You can create lists by using square brackets `[]`. Items in a list are separated with commas.
+
+--- task ---
+
+Create three lists of data to show on your chart.
+
+Each list will store a nation's name and the number of medals won by that nation. 
+
+--- code ---
+---
+language: python
+filename: main.py
+line_numbers: true
+line_number_start: 7 
+line_highlights: 8-10
 ---
 # Add data to the chart
-with open('medals.csv') as f:
-    for line in f:
-        print(line)
+us = ['United States', 2399]
+gb = ['Great Britain', 1304]
+fr = ['France', 751]
+
 --- /code ---
 
 --- /task ---
 
---- task ---
-
-**Test:** Run your code and look at the text it prints out. 
-
-Notice that each line has two values, separated by commas.
-
-![A list of text strings, printed out over many lines.](images/lines.png)
-
-**Debug:** If the code doesn't work, make sure you have indented it under the `with` line, like in the example above.
-
---- /task ---
-
-Each string that your loop prints is made up of two pieces separated by a comma. Your `chart.add()` function needs each of those pieces as separate inputs.
-
-The `split()` function breaks a string into a list, just like the lists you made earlier. The `split(',')` function makes a new list item every time it sees a comma.
+When you store something in a list, it gets an **index**. An index is a number that tells you an item's position in a list. List indexes start from `0`, instead of `1`.
 
 --- task ---
 
-Put a `#` in front of the code that prints `line`. This will turn that code into a comment, so Python will ignore it. 
+You can get an item from a list by its index. For example, `my_list[3]` will get the **fourth** item in `my_list`, because indexes start at `0`.
 
-Use the `split()` method to break up each sting at a `,` and then store the first and second pieces in a new list. Then print those lists out.
+Use the indexes of your lists and `chart.add()` to display your data. The nation's name at item 0 will be used as a category label for the chart and the amount of medals at item 1 will determine the height of the bar.
 
 --- code ---
 ---
 language: python
 filename: main.py
 line_numbers: true
-line_number_start: 9 
-line_highlights: 12-13
+line_number_start: 10 
+line_highlights: 12-14
 ---
-with open('medals.csv') as f:
-    for line in f:
-        #print(line)
-        pieces = line.split(',') # Breaks the string into a list
-        print(pieces) # Print each list
+gb = ['Great Britain', 1304]
+
+chart.add(us[0], us[1])
+chart.add(gb[0], gb[1])
+chart.add(fr[0], fr[1])
+
 --- /code ---
 
-**Tip:** `split()` can split a string into a list around any text you want. You can split on punctuation, a letter, or even whole words.
+--- /task ---
+
+--- task ---
+
+**Test:** Run your code to see the chart.
+
+![A bar chart showing the medals won by the United States, Russia, and Great Britain.](images/short_list.png){:width="300px"}
+
+**Debug**: If you see a message about an `IndexError`, your code is trying to get a value from a list index that doesn't exist (e.g. `us[2]`). To fix this:
+ - Check each of your `chart.add` lines to be sure you are only using `0` and `1` as indexes.
+ - Check the lines where you created your lists. Make sure each list has two items, separated by a comma.
 
 --- /task ---
 
 --- task ---
 
-**Test:** Run your code and look at the text it prints out. Each line should be a list with two items. You may notice that the second item has `\n` at the end. `\n` is usually invisible. It tells the computer it has reached the end of the line in a file.
-
-![Many lists, each with two items, printed out.](images/tally.png){:width="400px"}
-
-**Debug:** If your `pieces` are printing out as lists with only one item then check that you have `','` in the `()` of `line.split()`.
-
-**Debug:** If you see a message about `split` being 'not defined', check that you have included `line.` before it.
-
---- /task ---
-
---- task ---
-
-Load your data into the chart as part of your `for` loop. `team` is a string so can be used as a label on the chart. `medal` is currently a string, but needs to be converted to a number. You can use the `int()` function to **cast** a string to a number.
+Now load two more teams by adding new lists and `chart.add()` calls.
 
 --- code ---
 ---
 language: python
 filename: main.py
 line_numbers: true
-line_number_start: 9 
-line_highlights: 14-16
+line_number_start: 7 
+line_highlights: 11-12, 17-18
 ---
-with open('medals.csv') as f:
-    for line in f:
-        #print(line)
-        pieces = line.split(',')
-        #print(pieces)
-        team = pieces[0]
-        medals = pieces[1]
-        chart.add(team, int(medals))  # Make medals a number
---- /code ---
+# Add data to the chart
+us = ['United States', 2399]
+gb = ['Great Britain', 1304]
+fr = ['France', 751]
+ge = ['Germany', 655]
+ch = ['China', 636]
 
-**Tip:** You can now use `#` to turn `print(pieces)` into a comment too.
+chart.add(us[0], us[1])
+chart.add(gb[0], gb[1])
+chart.add(fr[0], fr[1])
+chart.add(ge[0], ge[1])
+chart.add(ch[0], ch[1])
+
+--- /code ---
 
 --- /task ---
 
 --- task ---
 
-**Test:** Run your code and look at the chart it creates. Try hovering over some of the bars, or clicking on the names of teams to add and remove them from the chart.
+**Test:** Run your code to see the updated chart. Try clicking on the United States' name. Then watch the scale of the chart change.
 
-![A bar chart showing the medal counts of many nations. Information appears when the mouse hovers over a bar. Bars disappear as the names of nations are clicked.](images/adjust_chart.gif){:width="400px"}
+![A bar chart showing the medals won by the United States, Great Britain, France, Germany, and China. When the United States' name is clicked, the tallest bar vanishes from the chart, which resizes.](images/short_list_2.gif){:width="300px"}
 
-**Debug:** If your chart is empty, check that you have `int(medals)` in your `chart.add()`.
-
-**Debug:** If you see a message about an `IndexError`, your code is trying to get a value from a list index that doesn't exist (e.g. `pieces[2]`). To fix this:
- - Check each of your `team` and `medals` variables to be sure you are only using `0` and `1` as indexes.
- - Check the printed `pieces` lists to be sure they have two items: `['Tonga', '1\n']`, not `['Tonga,1\n']`. If they don't, then check that you have `','` in the `()` of `line.split()`.
- - Check you do not have a blank line at the bottom of your .csv file.
+**Debug**: If you see a message about an `IndexError`, your code is trying to get a value from a list index that doesn't exist (e.g. `fr[2]`). To fix this:
+ - Check each of your `chart.add` lines to be sure you are only using `0` and `1` as indexes.
+ - Check the lines where you created your lists. Make sure each list has two items, separated by a comma.
 
 --- /task ---
 
