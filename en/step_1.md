@@ -36,7 +36,7 @@ line_number_start: 11
 line_highlights: 12
 ---
 # Display the chart
-chart.render()
+chart.render_in_browser()
 --- /code ---
 </div>
 
@@ -65,7 +65,7 @@ fr = ['France', 751]
 
 
 <div class="c-project-output">
-<pre>![A bar chart showing the medals won by the United States, Russia, and Great Britain.](images/short_list.png){:width="300px"}</pre>
+![A bar chart showing the medals won by the United States, Russia, and Great Britain.](images/short_list.png){:width="300px"}
 </div>
 
 <div class="c-project-callout c-project-callout--tip">
