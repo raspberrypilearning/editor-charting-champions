@@ -1,44 +1,8 @@
 
-<h2 class="c-project-heading--task">Make a chart</h2>
+<h2 class="c-project-heading--task">Add data</h2>
 --- task ---
-Use Python to create and display a chart.
+Add some data to your chart.
 --- /task ---
-
-<h2 class="c-project-heading--explainer">Give the chart a name</h2>
-
-Add a title for your chart below the `# Create a chart` comment.
-
-<div class="c-project-code">
---- code ---
----
-language: python
-filename: main.py
-line_numbers: true
-line_number_start: 4 
-line_highlights: 5
----
-# Create a chart
-chart = Bar(title='Olympic medals')
---- /code ---
-</div>
-
-<h2 class="c-project-heading--explainer">Display the chart</h2>
-
-Call `chart.render()` to display the chart.
-
-<div class="c-project-code">
---- code ---
----
-language: python
-filename: main.py
-line_numbers: true
-line_number_start: 11 
-line_highlights: 12
----
-# Display the chart
-chart.render_in_browser()
---- /code ---
-</div>
 
 <h2 class="c-project-heading--explainer">Add some data</h2>
 
@@ -65,12 +29,9 @@ fr = ['France', 751]
 
 
 
-<h2 class="c-project-heading--explainer">Add some data</h2>
+<h2 class="c-project-heading--explainer">Make lists</h2>
 
-You can now add data to the chart.
-
-Add the code below under the `# Add data to the chart` comment.
-Then click the *Run* button.
+Use the indexes of your lists and `chart.add()` to display your data. The nation's name at item 0 will be used as a category label for the chart and the amount of medals at item 1 will determine the height of the bar.
 
 <div class="c-project-code">
 --- code ---
@@ -78,19 +39,14 @@ Then click the *Run* button.
 language: python
 filename: main.py
 line_numbers: true
-line_number_start: 10 
+line_number_start: 12 
 line_highlights: 12-14
 ---
-gb = ['Great Britain', 1304]
-
 chart.add(us[0], us[1])
 chart.add(gb[0], gb[1])
 chart.add(fr[0], fr[1])
 --- /code ---
 </div>
-
-
-
 
 
 <div class="c-project-output">
