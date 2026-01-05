@@ -29,7 +29,7 @@ chart.add(ge[0], ge[1])
 chart.add(ch[0], ch[1])
 
 --- /code ---
-</div class="c-project-code">
+</div>
 
 **Test:** Run your code to see the updated chart. Try clicking on the United States' name. Then watch the scale of the chart change.
 
@@ -49,14 +49,14 @@ BULLET POINT TIPS HERE (OPTIONAL)
 
 ### Debugging
 
-BULLET POINT DEBUG POINTS HERE (OPTIONAL)
+**Debug**: If you see a message about an `IndexError`, your code is trying to get a value from a list index that doesn't exist (e.g. `fr[2]`). To fix this:
+ - Check each of your `chart.add` lines to be sure you are only using `0` and `1` as indexes.
+ - Check the lines where you created your lists. Make sure each list has two items, separated by a comma.
+
 
 </div>
 
 
 
-**Debug**: If you see a message about an `IndexError`, your code is trying to get a value from a list index that doesn't exist (e.g. `fr[2]`). To fix this:
- - Check each of your `chart.add` lines to be sure you are only using `0` and `1` as indexes.
- - Check the lines where you created your lists. Make sure each list has two items, separated by a comma.
 
 

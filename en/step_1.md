@@ -73,14 +73,13 @@ BULLET POINT TIPS HERE (OPTIONAL)
 
 ### Debugging
 
-BULLET POINT DEBUG POINTS HERE (OPTIONAL)
-
-</div>
-
-
 **Debug**: If you see an error about `Bar()` or `chart.render()` being `not defined`:
 
  - If the error is for `Bar()`, make sure it has an uppercase B at the start, and brackets at the end
  - If the error is for `chart.render()`, check that it has the `.` between `chart` and `render`, as well as the brackets at the end
 
 **Debug**: If you are not using the Raspberry Pi code editor, and the graph hasn't appeared when you run your code, replace `chart.render()` with `chart.render_in_browser()`.
+
+</div>
+
+
