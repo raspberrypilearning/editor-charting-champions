@@ -12,6 +12,8 @@ Python can store related data as a **list**. You can create lists by using squar
 Create three lists of data to show on your chart.
 
 Each list will store a nation's name and the number of medals won by that nation. 
+--- /task ---
+
 
 <div class="c-project-code"> 
 --- code ---
