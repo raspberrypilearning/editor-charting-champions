@@ -1,4 +1,8 @@
-## Upgrade your project
+<h2 class="c-project-heading--task">Challenge</h2>
+--- task ---
+Upgrade your project with a pie chart
+--- /task ---
+
 
 <div style="display: flex; flex-wrap: wrap">
 <div style="flex-basis: 200px; flex-grow: 1; margin-right: 15px;">

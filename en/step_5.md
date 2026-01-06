@@ -1,6 +1,6 @@
-<h2 class="c-project-heading--task">Split values</h2>
+<h2 class="c-project-heading--task">Split into lists</h2>
 --- task ---
-Load large data sets from a file to save a lot of typing!
+Use `split(',')` to make a new list item every time it sees a comma
 --- /task ---
 
 each string that your loop prints is made up of two pieces separated by a comma. Your `chart.add()` function needs each of those pieces as separate inputs.

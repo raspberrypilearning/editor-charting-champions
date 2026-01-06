@@ -1,6 +1,6 @@
-<h2 class="c-project-heading--task">CSV wrangling</h2>
+<h2 class="c-project-heading--task">Large datasets</h2>
 --- task ---
-Load large data sets from a file to save a lot of typing!
+Load data from a CSV file
 --- /task ---
 
 The chart looks good! But, almost 150 nations have competed in the Olympics. To chart them, you're going to load their data from a file. It will save a lot of typing!

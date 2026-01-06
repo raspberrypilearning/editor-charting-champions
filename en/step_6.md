@@ -1,5 +1,7 @@
-
-
+<h2 class="c-project-heading--task">Load CSV into chart</h2>
+--- task ---
+Use `int()` to **cast** a string to a number and load into a chart
+--- /task ---
 
 Load your data into the chart as part of your `for` loop. `team` is a string so can be used as a label on the chart. `medal` is currently a string, but needs to be converted to a number. You can use the `int()` function to **cast** a string to a number.
 

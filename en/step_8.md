@@ -1,6 +1,6 @@
 <h2 class="c-project-heading--task">GDP data</h2>
 --- task ---
-Load large data sets from a file to save a lot of typing!
+Draw a chart based on the GDP data
 --- /task ---
 
 
