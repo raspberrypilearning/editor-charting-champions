@@ -1,35 +1,85 @@
-<div class="c-survey-banner" style="width:100%">
-  <a class="c-survey-banner__link" href="https://form.raspberrypi.org/f/code-editor-feedback" target="_blank">Take our survey</a> to help make our Code Editor better!
-</div>
 
-## You will make
-
-Discover the power of lists in Python by creating an interactive chart of Olympic medals.
-
-<p style="border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;">
-<span style="color: #0faeb0">**The Olympic Games**</span> began in 1896: thousands of athletes represent hundreds of nations from around the world. The modern games were inspired by ancient contests held in Olympia, Greece.
-</p>
-
-You will:
- - Use **lists** to store related data
- - Create a **chart** using the `pygal` library
- - Load data by having your program **read a file**
-
---- no-print ---
+<h2 class="c-project-heading--task">Make a chart</h2>
 --- task ---
-### Play ▶️
-<div style="display: flex; flex-wrap: wrap">
-<div style="flex-basis: 175px; flex-grow: 1">  
-Run the program to load the chart. Notice that the chart is interactive. What happens when you click on the top three nations in the key on the left?
-</div>
-<iframe src="https://editor.raspberrypi.org/en/embed/viewer/charting-champions-example" width="600" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen>
-</iframe>
-</div>
+Use Python to create and display a chart.
 --- /task ---
---- /no-print ---
 
---- print-only ---
-![Completed project.](images/completed_preview.png)
---- /print-only ---
+The starter project already has some code to import the `pygal` library, which you will use to draw your chart.
 
-![](http://code.org/api/hour/begin_rp_charting.png)
+--- code ---
+---
+language: python
+filename: main.py
+line_numbers: true
+line_number_start: 1
+line_highlights: 1
+---
+
+from pygal import bar
+
+--- /code ---
+
+<h2 class="c-project-heading--explainer">Give the chart a name</h2>
+
+Add a title for your chart below the `# Create a chart` comment.
+
+<div class="c-project-code">
+--- code ---
+---
+language: python
+filename: main.py
+line_numbers: true
+line_number_start: 4 
+line_highlights: 5
+---
+# Create a chart
+chart = Bar(title='Olympic medals')
+--- /code ---
+</div>
+
+<h2 class="c-project-heading--explainer">Display the chart</h2>
+
+Call `chart.render()` to display the chart.
+
+<div class="c-project-code">
+--- code ---
+---
+language: python
+filename: main.py
+line_numbers: true
+line_number_start: 11 
+line_highlights: 12
+---
+# Display the chart
+chart.render()
+--- /code ---
+</div>
+
+**Test:** Run your code to see the chart. It will be empty because it doesn't have data yet.
+
+<div class="c-project-output">
+![The words 'Olympic medals' on a black background.](images/empty_chart.png){:width="300px"}
+</div>
+
+<div class="c-project-callout c-project-callout--tip">
+
+### Tip
+
+BULLET POINT TIPS HERE (OPTIONAL)
+
+</div>
+
+<div class="c-project-callout c-project-callout--debug">
+
+### Debugging
+
+**Debug**: If you see an error about `Bar()` or `chart.render()` being `not defined`:
+
+ - If the error is for `Bar()`, make sure it has an uppercase B at the start, and brackets at the end
+ - If the error is for `chart.render()`, check that it has the `.` between `chart` and `render`, as well as the brackets at the end
+
+**Debug**: If you are not using the Raspberry Pi code editor, and the graph hasn't appeared when you run your code, replace `chart.render()` with `chart.render_in_browser()`.
+
+</div>
+
+
