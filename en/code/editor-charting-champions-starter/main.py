@@ -7,6 +7,5 @@ chart = Bar(title='Olympic medals')
 # Add data to the chart
 
 
-
 # Display the chart
 chart.render()
