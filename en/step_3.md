@@ -1,10 +1,10 @@
-<h2 class="c-project-heading--task">More data</h2>
+<h2 class="c-project-heading--task">Add new lists</h2>
 --- task ---
-Load more teams to your chart
+Load two more teams by adding new lists and `chart.add()` calls.
 --- /task ---
 
 <h2 class="c-project-heading--explainer">Add new lists</h2>
-Load two more teams by adding new lists and `chart.add()` calls.
+
 
 <div class="c-project-code">
 --- code ---

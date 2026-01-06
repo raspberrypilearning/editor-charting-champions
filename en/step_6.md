@@ -1,52 +1,43 @@
-## Upgrade your project
-
-<div style="display: flex; flex-wrap: wrap">
-<div style="flex-basis: 200px; flex-grow: 1; margin-right: 15px;">
-In this step, change how your chart looks, or what data it uses.
-</div>
-<div>
-![A pie chart showing the running time of Marvel films.](images/mcu_pie.png){:width="300px"}
-</div>
-</div>
-
-### Use a pie chart
-Try using a pie chart for a different look, or to show how something is divided.
-
+<h2 class="c-project-heading--task">Load CSV into chart</h2>
 --- task ---
-
-To create a pie chart instead of a bar chart, change the import from `pygal` to `Pie` instead of `Bar`. Do the same for the function you call to create `chart`. 
-
+Use `int()` to **cast** a string to a number and load into a chart
 --- /task ---
 
-### Use a different set of data
-You can load and chart any data that's in a `.csv` file with the program you've written.
+Load your data into the chart as part of your `for` loop. `team` is a string so can be used as a label on the chart. `medal` is currently a string, but needs to be converted to a number. You can use the `int()` function to **cast** a string to a number.
 
---- task ---
-
-**Choose:** Pick a different datafile for your project. There are two available:
-
- - `mcu.csv` is the runtime and gross income from the Marvel Cinematic Universe films
- - `carbon.csv` is the total (thousands of tons) and per-person (tons) carbon dioxide emissions of different countries and regions
-
---- /task ---
-
---- task ---
-
-Update the code that reads from `medals.csv` to read from your new file. 
-
-These files have more than one column of numbers. Use indexes on the `tally` list to choose which to add to your chart. 
-
-The carbon dioxide data uses numbers with decimals. To convert them from text strings, you'll need to use `float()` instead of `int()`.
-
---- /task ---
-
---- collapse ---
+--- code ---
 ---
-title: Completed project
+language: python
+filename: main.py
+line_numbers: true
+line_number_start: 9 
+line_highlights: 14-16
 ---
+with open('medals.csv') as f:
+    for line in f:
+        #print(line)
+        pieces = line.split(',')
+        #print(pieces)
+        team = pieces[0]
+        medals = pieces[1]
+        chart.add(team, int(medals))  # Make medals a number
+--- /code ---
 
-You can view the [completed project here](https://editor.raspberrypi.org/en/projects/charting-champions-example){:target="_blank"}.
+**Tip:** You can now use `#` to turn `print(pieces)` into a comment too.
 
---- /collapse ---
 
---- save ---
+
+--- task ---
+
+**Test:** Run your code and look at the chart it creates. Try hovering over some of the bars, or clicking on the names of teams to add and remove them from the chart.
+
+![A bar chart showing the medal counts of many nations. Information appears when the mouse hovers over a bar. Bars disappear as the names of nations are clicked.](images/adjust_chart.gif){:width="400px"}
+
+**Debug:** If your chart is empty, check that you have `int(medals)` in your `chart.add()`.
+
+**Debug:** If you see a message about an `IndexError`, your code is trying to get a value from a list index that doesn't exist (e.g. `pieces[2]`). To fix this:
+ - Check each of your `team` and `medals` variables to be sure you are only using `0` and `1` as indexes.
+ - Check the printed `pieces` lists to be sure they have two items: `['Tonga', '1\n']`, not `['Tonga,1\n']`. If they don't, then check that you have `','` in the `()` of `line.split()`.
+ - Check you do not have a blank line at the bottom of your .csv file.
+
+--- /task ---

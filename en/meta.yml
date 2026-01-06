@@ -14,17 +14,18 @@ steps:
   - title: Step 1
   - title: Step 2
   - title: Step 3
-    completion:
-      - engaged
   - title: Step 4
-    completion:
-      - internal
-  - title: Quick quiz
+  - title: Step 5
+  - title: Step 6
+  - title: Step 7
+  - title: Step 8
+  - title: Step 9
+  - title: Step 10
     knowledge_quiz:
       path: quiz1
       version: 1
       questions: 3
       passing_score: 3
     completion:
+      - internal
       - external
-  - title: Step 5
