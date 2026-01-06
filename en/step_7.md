@@ -1,3 +1,5 @@
+START HERE
+
 <h2 class="c-project-heading--task">Load CSV into chart</h2>
 --- task ---
 Use `int()` to convert a string to a number and load into a chart
