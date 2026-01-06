@@ -1,4 +1,4 @@
-# default-project-template
+# Editor Charting Champions
 
 ![default-project-template](banner.png)
 
