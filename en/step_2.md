@@ -63,7 +63,7 @@ chart.add(fr[0], fr[1])
 </div>
 
 
-▶️ **Run** your code to see the data in the chart.
+**Run** your code to see the data in the chart.
 
 <div class="c-project-output">
 ![A bar chart showing the medals won by the United States, Russia, and Great Britain.](images/short_list.png){:width="300px"}

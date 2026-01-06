@@ -1,11 +1,11 @@
 <h2 class="c-project-heading--task">Reading CSV data</h2>
 --- task ---
-Read the data from medals.csv using Python.
+Read the data from `medals.csv` using Python.
 --- /task ---
 
-Click on the `main.py` tab, and **delete** the old chart data (lines 7-17).
+Click on the **main.py** tab, and **delete** the lists and indexes from lines 7-17.
 
-Add code to read the CSV data.
+Add the following code.
 
 Use `with open()` to open a file and a `for` loop to repeat `print`. The loop ends when there are no more lines in the file.
 
@@ -23,7 +23,7 @@ with open('medals.csv') as f:
         print(line)
 --- /code ---
 
-▶️ **Run** your code to see the text from print out in the *Text output** tab. 
+**Run** your code to see the text from print out in the **Text output** tab. 
 
 <div class="c-project-output">
 ![A list of text strings, printed out over many lines.](images/lines.png)

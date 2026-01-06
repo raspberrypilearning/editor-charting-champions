@@ -31,7 +31,7 @@ chart.add(ch[0], ch[1])
 --- /code ---
 </div>
 
-▶️ **Run** your code to see the new bars of data in the chart. 
+**Run** your code to see the new bars of data in the chart. 
 
 <div class="c-project-output">
 ![A bar chart showing the medals won by the United States, Great Britain, France, Germany, and China. When the United States' name is clicked, the tallest bar vanishes from the chart, which resizes.](images/short_list_2.gif){:width="300px"}

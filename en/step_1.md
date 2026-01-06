@@ -47,7 +47,7 @@ chart.render()
 --- /code ---
 </div>
 
-▶️ **Run** your code to see the chart. It will have a title but be empty because it doesn't have data yet.
+**Run** your code to see the chart. It will have a title but be empty because it doesn't have data yet.
 
 <div class="c-project-output">
 ![The words 'Olympic medals' on a black background.](images/empty_chart.png){:width="300px"}
