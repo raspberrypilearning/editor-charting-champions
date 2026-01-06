@@ -29,8 +29,8 @@ Add a title for your chart below the `# Create a chart` comment.
 language: python
 filename: main.py
 line_numbers: true
-line_number_start: 4 
-line_highlights: 5
+line_number_start: 3
+line_highlights: 4
 ---
 # Create a chart
 chart = Bar(title='Olympic medals')
