@@ -1,9 +1,17 @@
-<h2 class="c-project-heading--task">Load CSV into chart</h2>
+<h2 class="c-project-heading--task">Split into lists</h2>
 --- task ---
-Use `int()` to **cast** a string to a number and load into a chart
+Use `split(',')` to make a new list item every time it sees a comma
 --- /task ---
 
-Load your data into the chart as part of your `for` loop. `team` is a string so can be used as a label on the chart. `medal` is currently a string, but needs to be converted to a number. You can use the `int()` function to **cast** a string to a number.
+each string that your loop prints is made up of two pieces separated by a comma. Your `chart.add()` function needs each of those pieces as separate inputs.
+
+The `split()` function breaks a string into a list, just like the lists you made earlier. The `split(',')` function makes a new list item every time it sees a comma.
+
+--- task ---
+
+Put a `#` in front of the code that prints `line`. This will turn that code into a comment, so Python will ignore it. 
+
+Use the `split()` method to break up each sting at a `,` and then store the first and second pieces in a new list. Then print those lists out.
 
 --- code ---
 ---
@@ -11,33 +19,30 @@ language: python
 filename: main.py
 line_numbers: true
 line_number_start: 9 
-line_highlights: 14-16
+line_highlights: 12-13
 ---
 with open('medals.csv') as f:
     for line in f:
         #print(line)
-        pieces = line.split(',')
-        #print(pieces)
-        team = pieces[0]
-        medals = pieces[1]
-        chart.add(team, int(medals))  # Make medals a number
+        pieces = line.split(',') # Breaks the string into a list
+        print(pieces) # Print each list
 --- /code ---
 
-**Tip:** You can now use `#` to turn `print(pieces)` into a comment too.
+**Tip:** `split()` can split a string into a list around any text you want. You can split on punctuation, a letter, or even whole words.
 
-
+--- /task ---
 
 --- task ---
 
-**Test:** Run your code and look at the chart it creates. Try hovering over some of the bars, or clicking on the names of teams to add and remove them from the chart.
+**Test:** Run your code and look at the text it prints out. Each line should be a list with two items. You may notice that the second item has `\n` at the end. `\n` is usually invisible. It tells the computer it has reached the end of the line in a file.
 
-![A bar chart showing the medal counts of many nations. Information appears when the mouse hovers over a bar. Bars disappear as the names of nations are clicked.](images/adjust_chart.gif){:width="400px"}
+![Many lists, each with two items, printed out.](images/tally.png){:width="400px"}
 
-**Debug:** If your chart is empty, check that you have `int(medals)` in your `chart.add()`.
+**Debug:** If your `pieces` are printing out as lists with only one item then check that you have `','` in the `()` of `line.split()`.
 
-**Debug:** If you see a message about an `IndexError`, your code is trying to get a value from a list index that doesn't exist (e.g. `pieces[2]`). To fix this:
- - Check each of your `team` and `medals` variables to be sure you are only using `0` and `1` as indexes.
- - Check the printed `pieces` lists to be sure they have two items: `['Tonga', '1\n']`, not `['Tonga,1\n']`. If they don't, then check that you have `','` in the `()` of `line.split()`.
- - Check you do not have a blank line at the bottom of your .csv file.
+**Debug:** If you see a message about `split` being 'not defined', check that you have included `line.` before it.
 
 --- /task ---
+
+
+

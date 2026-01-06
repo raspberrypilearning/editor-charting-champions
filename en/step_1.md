@@ -6,8 +6,6 @@ Use Python to create and display a chart
 
 <div class="c-project-callout c-project-callout--tip">
 
-### Tip
-
 The starter project already has some code to import the `pygal` library, which you will use to draw your chart.
 
 </div>

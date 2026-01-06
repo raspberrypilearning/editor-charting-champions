@@ -1,10 +1,10 @@
-<h2 class="c-project-heading--task">Add new lists</h2>
+<h2 class="c-project-heading--task">More lists, more data</h2>
 --- task ---
-Load two more teams by adding new lists and `chart.add()` calls.
+Practice adding more data in lists
 --- /task ---
 
 <h2 class="c-project-heading--explainer">Add new lists</h2>
-
+Load two more nations by adding new data lists and using `chart.add()` for each one.
 
 <div class="c-project-code">
 --- code ---
@@ -12,8 +12,8 @@ Load two more teams by adding new lists and `chart.add()` calls.
 language: python
 filename: main.py
 line_numbers: true
-line_number_start: 7 
-line_highlights: 11-12, 17-18
+line_number_start: 6 
+line_highlights: 10-11, 16-17
 ---
 # Add data to the chart
 us = ['United States', 2399]
@@ -31,7 +31,7 @@ chart.add(ch[0], ch[1])
 --- /code ---
 </div>
 
-**Test:** Run your code to see the updated chart. Try clicking on the United States' name. Then watch the scale of the chart change.
+▶️ **Run** your code to see the new bars of data in the chart. 
 
 <div class="c-project-output">
 ![A bar chart showing the medals won by the United States, Great Britain, France, Germany, and China. When the United States' name is clicked, the tallest bar vanishes from the chart, which resizes.](images/short_list_2.gif){:width="300px"}
@@ -41,22 +41,9 @@ chart.add(ch[0], ch[1])
 
 ### Tip
 
-BULLET POINT TIPS HERE (OPTIONAL)
+Try clicking on the United States' name. Then watch the scale of the chart change.
 
 </div>
-
-<div class="c-project-callout c-project-callout--debug">
-
-### Debugging
-
-**Debug**: If you see a message about an `IndexError`, your code is trying to get a value from a list index that doesn't exist (e.g. `fr[2]`). To fix this:
- - Check each of your `chart.add` lines to be sure you are only using `0` and `1` as indexes.
- - Check the lines where you created your lists. Make sure each list has two items, separated by a comma.
-
-
-</div>
-
-
 
 
 
