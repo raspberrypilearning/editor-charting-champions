@@ -4,14 +4,9 @@
 Use Python to create and display a chart
 --- /task ---
 
-<div class="c-project-callout c-project-callout--tip">
+<h2 class="c-project-heading--explainer">Give the chart a name</h2>
 
 The starter project already has some code to import the `pygal` library, which you will use to draw your chart.
-
-</div>
-
-
-<h2 class="c-project-heading--explainer">Give the chart a name</h2>
 
 Add a title for your chart below the `# Create a chart` comment.
 
