@@ -26,5 +26,5 @@ with open('medals.csv') as f:
 **Run** your code to see the text from print out in the **Text output** tab. 
 
 <div class="c-project-output">
-![A list of text strings, printed out over many lines.](images/lines.png)
+![A list of text strings, printed out over many lines.](images/lines.png){:width="300px"}
 </div>

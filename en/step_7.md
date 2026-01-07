@@ -1,13 +1,11 @@
-START HERE
-
-<h2 class="c-project-heading--task">Load CSV into chart</h2>
+<h2 class="c-project-heading--task">Make CSV into chart</h2>
 --- task ---
 Use `int()` to convert a string to a number and load into a chart
 --- /task ---
 
 Load your data into the chart by making two new lists
 
-`nation = pieces[0]` is used as a label on the chart. 
+`team = pieces[0]` is used as a label on the chart. 
 
 `medals = pieces[1]` is used as the bar.
 
@@ -26,7 +24,7 @@ with open('medals.csv') as f:
         #print(line)
         pieces = line.split(',')
         print(pieces)
-        nation = pieces[0]
+        team = pieces[0]
         medals = pieces[1]
         chart.add(nation, int(medals))  # Make medals a number
 --- /code ---
