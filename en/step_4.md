@@ -13,7 +13,7 @@ CSV stands for **C**omma-**S**eparated **V**alue.
 There are several `.csv` files included in this starter project that contain the data you need for your charts.
 </div>
 
-Click on the file icon and open `medals.csv`. See how each line has a team name and the number of medals they have won, separated by a comma. 
+Click on the file icon and click on `medals.csv`. See how each line has a team name and the number of medals they have won, separated by a comma. 
 
 <div class="c-project-output">
 ![The Raspberry Pi code editor with medals file highlighted and open, displaying a list of countries and medal numbers seperated with a comma.](images/medals-tab.png)

@@ -26,7 +26,7 @@ with open('medals.csv') as f:
         print(pieces)
         team = pieces[0]
         medals = pieces[1]
-        chart.add(nation, int(medals))  # Make medals a number
+        chart.add(team, int(medals))  # Make medals a number
 --- /code ---
 
 **Test:** Run your code and look at the chart it creates. Try hovering over some of the bars, or clicking on the names of teams to add and remove them from the chart.

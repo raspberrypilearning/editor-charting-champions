@@ -12,6 +12,6 @@ The taller a bar is, the more medals that team has won. Hover the mouse over som
 <div class="c-project-callout c-project-callout--tip">
 
 ### Data analysis
-People have done these kinds of investigations since long before computers were invented. For example, in the 1850s, Florence Nightingale, a nurse, used charts and graphs to show the importance of disease prevention in caring for the sick. 
+People have been investigating data long before computers were invented. For example, in the 1850s, Florence Nightingale used charts and graphs to show the importance of disease prevention in caring for the sick. 
 ![Florence Nightingale's chart of causes of mortality.](images/nightingale.jpeg){:width="300px"}
 </div>

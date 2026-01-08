@@ -1,44 +1,22 @@
-<h2 class="c-project-heading--task">Population data</h2>
+<h2 class="c-project-heading--task">Challenge</h2>
 --- task ---
-Compare with population data in another CSV file
+Upgrade your project by changing how your chart looks, or what data it uses.
 --- /task ---
 
-### Population sizes
-Why might they have the most medals?
+<h2 class="c-project-heading--explainer">Pie chart</h2>
+To create a pie chart instead of a bar chart, change the import from `pygal` to `Pie` instead of `Bar` and change the code in line for to `Pie`.
 
-Look at the population of nations to see if there is any sort of pattern.
 
-In the file tab open `pop.csv`. Because the data in `pop.csv` is also made up of a text string and a number, you can re-use your code with only small changes.
+<h2 class="c-project-heading--explainer">Different data</h2>
+Try loading and charting other data with the program you've written.
 
-Change the chart title, the `width` of the chart, the file you are opening, and the category name to draw a chart based on the population data in `pop.csv`.
+There are two other `.csv` files available in this project:
 
---- code ---
----
-language: python
-filename: main.py
-line_numbers: true
-line_number_start: 3 
-line_highlights: 4, 6, 12, 13
----
-# Create a chart
-chart = Bar(title='Population', width='600')
+ - `mcu.csv` is the runtime and gross income from the Marvel Cinematic Universe films
+ - `carbon.csv` is the total (thousands of tons) and per-person (tons) carbon dioxide emissions of different countries and regions
 
-# Add data to the chart
-with open('pop.csv') as f:
-    for line in f:
-        #print(line)
-        pieces = line.split(',')
-        #print(pieces)
-        team = pieces[0]
-        population = pieces[1]
-        chart.add(team, int(population))  # Make population a number
---- /code ---
 
-**Test:** run your program and look at the chart it draws. 
+Change `medals.csv` in your code to your new file name.  
 
-Hover the mouse over the biggest bars and notice which countries they belong to. Click the names of the really big ones to remove them from the chart; that will let you get a closer look at the others. Do any of the countries with lots of people have a large number of medals?
-
-<div class="c-project-output">
-![A bar chart showing the populations of many nations. Information appears when the mouse hovers over a bar. Bars disappear as the names of nations are clicked.](images/pop.gif){:width="500px"}
-</div>
-
+- These files have more than one column of numbers. Use indexes on the `tally` list to choose which to add to your chart. 
+- The carbon dioxide data uses numbers with decimals. To convert them from text, you'll need to use `float()` instead of `int()`.

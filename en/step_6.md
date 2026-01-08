@@ -26,11 +26,12 @@ with open('medals.csv') as f:
 
 **Run** your code and look at the text it prints out in the Text output tab. Each line should be a list with two items. 
 
-You may notice that the second item has `\n` at the end. This tells the computer it has reached the end of the line in a file.
-
 <div class="c-project-output">
 ![Many lists, each with two items, printed out.](images/tally.png){:width="400px"}
 </div>
 
+<div class="c-project-callout c-project-callout--tip">
 
-
+### Tip
+You may notice that the second item has `\n` or `\r\n` at the end. This tells the computer it has reached the end of the line in a file.
+</div>

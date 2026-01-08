@@ -3,7 +3,13 @@
 Read the data from `medals.csv` using Python.
 --- /task ---
 
-Click on the **main.py** tab, and **delete** the lists and indexes from lines 7-17.
+Click on the **main.py** tab.
+
+<div class="c-project-output">
+![Showing the tabs in the editor](images/maintab.png){:width="250px"}
+</div>
+
+**Delete** the code between the `# Add data to the chart` and `# Display the chart` comments.
 
 Add the following code.
 

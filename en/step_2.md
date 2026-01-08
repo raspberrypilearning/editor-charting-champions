@@ -53,9 +53,13 @@ Use list indexes with chart.add() to show your data. Item 0 is the label and ite
 language: python
 filename: main.py
 line_numbers: true
-line_number_start: 11
-line_highlights: 11-13
+line_number_start: 6
+line_highlights: 10-12
 ---
+# Add data to the chart
+us = ['United States', 2399]
+gb = ['Great Britain', 1304]
+fr = ['France', 751]
 chart.add(us[0], us[1])
 chart.add(gb[0], gb[1])
 chart.add(fr[0], fr[1])
