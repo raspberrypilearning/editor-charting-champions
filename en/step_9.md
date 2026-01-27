@@ -1,6 +1,8 @@
 <h2 class="c-project-heading--task">Challenge</h2>
 --- task ---
+
 Upgrade your project by changing how your chart looks, or what data it uses.
+
 --- /task ---
 
 <h2 class="c-project-heading--explainer">Pie chart</h2>

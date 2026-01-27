@@ -1,6 +1,8 @@
 <h2 class="c-project-heading--task">Add data</h2>
 --- task ---
+
 Get data into your chart
+
 --- /task ---
 
 <h2 class="c-project-heading--explainer">Create lists</h2>

@@ -1,6 +1,8 @@
 <h2 class="c-project-heading--task">Investigating data</h2>
 --- task ---
+
 Explore the data in the chart
+
 --- /task ---
 
 The taller a bar is, the more medals that team has won. Hover the mouse over some of the tallest bars and notice which teams they belong to. 

@@ -1,6 +1,8 @@
 <h2 class="c-project-heading--task">More lists, more data</h2>
 --- task ---
+
 Practice adding more data in lists
+
 --- /task ---
 
 <h2 class="c-project-heading--explainer">Add new lists</h2>

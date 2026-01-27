@@ -1,7 +1,9 @@
 
 <h2 class="c-project-heading--task">Make a chart</h2>
 --- task ---
+
 Use Python to create and display a chart
+
 --- /task ---
 
 <h2 class="c-project-heading--explainer">Give the chart a name</h2>

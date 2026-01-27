@@ -1,6 +1,8 @@
 <h2 class="c-project-heading--task">Reading CSV data</h2>
 --- task ---
+
 Read the data from `medals.csv` using Python.
+
 --- /task ---
 
 Click on the **main.py** tab.

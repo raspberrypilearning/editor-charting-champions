@@ -1,6 +1,8 @@
 <h2 class="c-project-heading--task">Split into lists</h2>
 --- task ---
+
 Use `split(',')` to make a new list item every time there is a comma
+
 --- /task ---
 
 Put a `#` in front of `print(line)`. This will turn that code into a comment, so Python will ignore it. 
