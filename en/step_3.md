@@ -1,7 +1,7 @@
 <h2 class="c-project-heading--task">Add new lists</h2>
---- task ---
+### Step 1
+
 Load two more teams by adding new lists and `chart.add()` calls.
---- /task ---
 
 <h2 class="c-project-heading--explainer">Add new lists</h2>
 

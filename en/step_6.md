@@ -1,7 +1,7 @@
 <h2 class="c-project-heading--task">Load CSV into chart</h2>
---- task ---
+### Step 1
+
 Use `int()` to **cast** a string to a number and load into a chart
---- /task ---
 
 Load your data into the chart as part of your `for` loop. `team` is a string so can be used as a label on the chart. `medal` is currently a string, but needs to be converted to a number. You can use the `int()` function to **cast** a string to a number.
 
@@ -27,7 +27,7 @@ with open('medals.csv') as f:
 
 
 
---- task ---
+### Step 2
 
 **Test:** Run your code and look at the chart it creates. Try hovering over some of the bars, or clicking on the names of teams to add and remove them from the chart.
 
@@ -39,5 +39,3 @@ with open('medals.csv') as f:
  - Check each of your `team` and `medals` variables to be sure you are only using `0` and `1` as indexes.
  - Check the printed `pieces` lists to be sure they have two items: `['Tonga', '1\n']`, not `['Tonga,1\n']`. If they don't, then check that you have `','` in the `()` of `line.split()`.
  - Check you do not have a blank line at the bottom of your .csv file.
-
---- /task ---

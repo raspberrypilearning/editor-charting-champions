@@ -1,7 +1,7 @@
 <h2 class="c-project-heading--task">GDP data</h2>
---- task ---
+### Step 1
+
 Draw a chart based on the GDP data
---- /task ---
 
 
 ### Wealth
@@ -12,7 +12,7 @@ A file called `gdp.csv` is part of the starter project. It has data on the annua
 <span style="color: #0faeb0">**GDP**</span> is the Gross Domestic Product. It measures the value, in money, of everything produced in an area over a given time period. It can measure how rich an area is.
 </p>
 
---- task ---
+### Step 2
 
 Change the chart title, the file you are opening, and the category name to draw a chart based on the GDP data in `gdp.csv`.
 
@@ -39,17 +39,13 @@ with open('gdp.csv') as f:
         chart.add(team, float(gdp))  # Make GDP a number
 --- /code ---
 
---- /task ---
-
---- task ---
+### Step 3
 
 Now run your program and look at the chart it draws. 
 
 ![A bar chart showing the GDP of many nations. Information appears when the mouse hovers over a bar. Bars disappear as the names of nations are clicked.](images/gdp.gif){:width="500px"}
 
 Hover the mouse over the biggest bars and notice which countries they belong to. Click the names of the really big ones to remove them from the chart; that will let you take a closer look at the others. Did any of the richest countries' teams have very large numbers of medals?
-
---- /task ---
 
 ### What did you find?
 What did you discover by using your program to look at this data?

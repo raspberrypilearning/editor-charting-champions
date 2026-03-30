@@ -1,7 +1,7 @@
 <h2 class="c-project-heading--task">Large datasets</h2>
---- task ---
+### Step 1
+
 Load data from a CSV file
---- /task ---
 
 The chart looks good! But, almost 150 nations have competed in the Olympics. To chart them, you're going to load their data from a file. It will save a lot of typing!
 
@@ -66,7 +66,7 @@ BULLET POINT DEBUG POINTS HERE (OPTIONAL)
 
 You'll need to turn each line of `medals.csv` into a text string and a number in Python, like in the lists you made.
 
---- task ---
+### Step 2
 
 Click on the `main.py` tab and add code to load the file into a variable by using `with open() as`. Then use a `for` loop to `print` each line from the variable.
 
@@ -88,9 +88,7 @@ with open('medals.csv') as f:
         print(line)
 --- /code ---
 
---- /task ---
-
---- task ---
+### Step 3
 
 **Test:** Run your code and look at the text it prints out. 
 
@@ -99,5 +97,3 @@ Notice that each line has two values, separated by commas.
 ![A list of text strings, printed out over many lines.](images/lines.png)
 
 **Debug:** If the code doesn't work, make sure you have indented it under the `with` line, like in the example above.
-
---- /task ---

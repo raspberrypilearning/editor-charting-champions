@@ -1,8 +1,8 @@
 
 <h2 class="c-project-heading--task">Make a chart</h2>
---- task ---
+### Step 1
+
 Use Python to create and display a chart
---- /task ---
 
 The starter project already has some code to import the `pygal` library, which you will use to draw your chart.
 

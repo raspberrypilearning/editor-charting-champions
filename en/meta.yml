@@ -10,22 +10,27 @@ version: 4
 listed: true
 copyedit: true
 last_tested: "2021-10-07"
+landing: true
 steps:
-  - title: Step 1
-  - title: Step 2
-  - title: Step 3
-  - title: Step 4
-  - title: Step 5
-  - title: Step 6
-  - title: Step 7
-  - title: Step 8
-  - title: Step 9
-  - title: Step 10
+  - title: Make a chart
+  - title: Add data
+    completion:
+      - engaged
+  - title: Add new lists
+  - title: Large datasets
+  - title: Split into lists
+  - title: Load CSV into chart
+    completion:
+      - internal
+  - title: Investigating data
+  - title: GDP data
+  - title: Quick quiz
     knowledge_quiz:
       path: quiz1
       version: 1
       questions: 3
       passing_score: 3
     completion:
-      - internal
       - external
+  - title: Challenge
+    challenge: true

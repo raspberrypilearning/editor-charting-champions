@@ -1,18 +1,17 @@
 <h2 class="c-project-heading--task">Add data</h2>
---- task ---
+### Step 1
+
 Get data into your chart
---- /task ---
 
 <h2 class="c-project-heading--explainer">Add some data</h2>
 
 Python can store related data as a **list**. You can create lists by using square brackets `[]`. Items in a list are separated with commas.
 
---- task ---
+### Step 2
 
 Create three lists of data to show on your chart.
 
 Each list will store a nation's name and the number of medals won by that nation. 
---- /task ---
 
 
 <div class="c-project-code"> 
