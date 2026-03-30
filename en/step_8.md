@@ -23,7 +23,7 @@ The `gdp.csv` file stores the GDP as decimal numbers. Update the type from `int`
 language: python
 filename: main.py
 line_numbers: true
-line_number_start: 6 
+line_number_start: 6
 line_highlights: 6, 9, 15, 16
 ---
 chart.title = 'GDP'

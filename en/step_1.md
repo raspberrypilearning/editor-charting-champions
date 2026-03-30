@@ -15,7 +15,7 @@ line_number_start: 1
 line_highlights: 1
 ---
 
-from pygal import bar
+from pygal import Bar
 
 --- /code ---
 
@@ -47,8 +47,8 @@ Call `chart.render()` to display the chart.
 language: python
 filename: main.py
 line_numbers: true
-line_number_start: 11 
-line_highlights: 12
+line_number_start: 10
+line_highlights: 11
 ---
 # Display the chart
 chart.render()
@@ -59,14 +59,6 @@ chart.render()
 
 <div class="c-project-output">
 ![The words 'Olympic medals' on a black background.](images/empty_chart.png){:width="300px"}
-</div>
-
-<div class="c-project-callout c-project-callout--tip">
-
-### Tip
-
-BULLET POINT TIPS HERE (OPTIONAL)
-
 </div>
 
 <div class="c-project-callout c-project-callout--debug">
@@ -81,5 +73,4 @@ BULLET POINT TIPS HERE (OPTIONAL)
 **Debug**: If you are not using the Raspberry Pi code editor, and the graph hasn't appeared when you run your code, replace `chart.render()` with `chart.render_in_browser()`.
 
 </div>
-
 

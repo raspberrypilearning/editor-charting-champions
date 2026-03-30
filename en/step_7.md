@@ -45,7 +45,7 @@ Change the chart title, the `width` of the chart, the file you are opening, and 
 language: python
 filename: main.py
 line_numbers: true
-line_number_start: 6 
+line_number_start: 6
 line_highlights: 6, 9, 15, 16
 ---
 chart = Bar(title='Population', width='600')

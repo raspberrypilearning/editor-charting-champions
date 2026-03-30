@@ -20,7 +20,7 @@ Each list will store a nation's name and the number of medals won by that nation
 language: python
 filename: main.py
 line_numbers: true
-line_number_start: 7 
+line_number_start: 7
 line_highlights: 8-10
 ---
 # Add data to the chart
@@ -44,8 +44,8 @@ Use the indexes of your lists and `chart.add()` to display your data. The nation
 language: python
 filename: main.py
 line_numbers: true
-line_number_start: 12 
-line_highlights: 12-14
+line_number_start: 11
+line_highlights: 11-13
 ---
 chart.add(us[0], us[1])
 chart.add(gb[0], gb[1])
@@ -57,15 +57,7 @@ chart.add(fr[0], fr[1])
 **Test:** Run your code to see the chart.
 
 <div class="c-project-output">
-![A bar chart showing the medals won by the United States, Russia, and Great Britain.](images/short_list.png){:width="300px"}
-</div>
-
-<div class="c-project-callout c-project-callout--tip">
-
-### Tip
-
-BULLET POINT TIPS HERE (OPTIONAL)
-
+![A bar chart showing the medals won by the United States, Great Britain, and France.](images/short_list.png){:width="300px"}
 </div>
 
 <div class="c-project-callout c-project-callout--debug">
@@ -77,5 +69,4 @@ BULLET POINT TIPS HERE (OPTIONAL)
  - Check the lines where you created your lists. Make sure each list has two items, separated by a comma.
 
 </div>
-
 

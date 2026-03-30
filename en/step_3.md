@@ -12,7 +12,7 @@ Load two more teams by adding new lists and `chart.add()` calls.
 language: python
 filename: main.py
 line_numbers: true
-line_number_start: 7 
+line_number_start: 7
 line_highlights: 11-12, 17-18
 ---
 # Add data to the chart
@@ -37,14 +37,6 @@ chart.add(ch[0], ch[1])
 ![A bar chart showing the medals won by the United States, Great Britain, France, Germany, and China. When the United States' name is clicked, the tallest bar vanishes from the chart, which resizes.](images/short_list_2.gif){:width="300px"}
 </div>
 
-<div class="c-project-callout c-project-callout--tip">
-
-### Tip
-
-BULLET POINT TIPS HERE (OPTIONAL)
-
-</div>
-
 <div class="c-project-callout c-project-callout--debug">
 
 ### Debugging
@@ -55,7 +47,6 @@ BULLET POINT TIPS HERE (OPTIONAL)
 
 
 </div>
-
 
 
 
