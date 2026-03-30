@@ -1,76 +1,37 @@
 <h2 class="c-project-heading--task">Large datasets</h2>
 ### Step 1
 
-Load data from a CSV file
+Load bigger datasets from a CSV file
 
-The chart looks good! But, almost 150 nations have competed in the Olympics. To chart them, you're going to load their data from a file. It will save a lot of typing!
+The chart looks good, but nearly 150 nations have competed in the Olympics. Instead of typing them all, you can load the data from a file.
 
 <div class="c-project-callout c-project-callout--tip">
 
-### Tip
+### CSV files
 
-<div style="border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;">
-<span style="color: #0faeb0">**CSV files**</span> are Comma-Separated Values files. They contain data in rows and columns, like a table. Each line is a row, with commas separating that row's values into columns.
-
+CSV stands for **C**omma-**S**eparated **V**alue.
 There are several `.csv` files included in this starter project that contain the data you need for your charts.
 
-Open `medals.csv` and look at the data in it. See how each line has a team name and the number of medals they have won, separated by a comma. 
-![A few lines of a csv file.](images/csv_sample.png){:width="200px"}
-![The Raspberry Pi code editor with medals file highlighted and open, displaying a list of countries and medal numbers seperated with a comma.](images/medals-tab.png)
-
-</div>
-
-</div>
-
-
-<h2 class="c-project-heading--explainer">PROBABLY UNNECCESARY TITLE</h2>
-
-
-
-
-
-<div class="c-project-code">
---- code ---
----
-language: python
-filename: main.py
-line_numbers: true
-line_number_start: 
-line_highlights: 
----
-CODE THEY WRITE HERE
---- /code ---
+Open `medals.csv` and look at the data in it. See how each line has a team name and the number of medals they have won, separated by a comma.
 </div>
 
 <div class="c-project-output">
-<pre>WHAT THEY SHOULD SEE IF OUTPUT IS TEXT - OTHERWISE USE IMAGE</pre>
+![The Raspberry Pi code editor with medals file highlighted and open, displaying a list of countries and medal numbers seperated with a comma.](images/medals-tab.png)
 </div>
-
-<div class="c-project-callout c-project-callout--tip">
-
-### Tip
-
-
-</div>
-
-<div class="c-project-callout c-project-callout--debug">
-
-### Debugging
-
-BULLET POINT DEBUG POINTS HERE (OPTIONAL)
-
-</div>
-
-
-
 
 You'll need to turn each line of `medals.csv` into a text string and a number in Python, like in the lists you made.
 
 ### Step 2
 
-Click on the `main.py` tab and add code to load the file into a variable by using `with open() as`. Then use a `for` loop to `print` each line from the variable.
+Click on the **main.py** tab.
 
-The `for` loop will let you repeat code. So you will load hundreds of teams to your chart with just a few lines of code!
+<div class="c-project-output">
+![Showing the tabs in the editor](images/maintab.png){:width="250px"}
+</div>
+
+Add code to load the file by using `with open() as`. Then use a `for` loop to `print` each line from the file.
+
+The `for` loop lets you repeat code, so you can load hundreds of teams into your chart with just a few lines of code.
 
 [[[generic-python-file-read]]]
 
@@ -79,8 +40,8 @@ The `for` loop will let you repeat code. So you will load hundreds of teams to y
 language: python
 filename: main.py
 line_numbers: true
-line_number_start: 8 
-line_highlights: 9-11
+line_number_start: 6
+line_highlights: 7-9
 ---
 # Add data to the chart
 with open('medals.csv') as f:
@@ -90,10 +51,12 @@ with open('medals.csv') as f:
 
 ### Step 3
 
-**Test:** Run your code and look at the text it prints out. 
+**Run** your code and look at the text it prints out in the **Text output** tab.
 
 Notice that each line has two values, separated by commas.
 
-![A list of text strings, printed out over many lines.](images/lines.png)
+<div class="c-project-output">
+![A list of text strings, printed out over many lines.](images/lines.png){:width="300px"}
+</div>
 
 **Debug:** If the code doesn't work, make sure you have indented it under the `with` line, like in the example above.
