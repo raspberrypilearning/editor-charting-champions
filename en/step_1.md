@@ -1,8 +1,8 @@
-
 <h2 class="c-project-heading--task">Make a chart</h2>
-### Step 1
 
 Use Python to create and display a chart
+
+<h2 class="c-project-heading--explainer">Give the chart a name</h2>
 
 The starter project already has some code to import the `pygal` library, which you will use to draw your chart.
 
@@ -18,8 +18,6 @@ line_highlights: 1
 from pygal import Bar
 
 --- /code ---
-
-<h2 class="c-project-heading--explainer">Give the chart a name</h2>
 
 Add a title for your chart below the `# Create a chart` comment.
 
@@ -37,7 +35,6 @@ chart = Bar(title='Olympic medals')
 --- /code ---
 </div>
 
-<h2 class="c-project-heading--explainer">Display the chart</h2>
 
 Call `chart.render()` to display the chart.
 
@@ -55,15 +52,17 @@ chart.render()
 --- /code ---
 </div>
 
-**Test:** Run your code to see the chart. It will be empty because it doesn't have data yet.
+## Now run your code
+
+You should see the chart. It will be empty because it doesn't have data yet.
 
 <div class="c-project-output">
 ![The words 'Olympic medals' on a black background.](images/empty_chart.png){:width="300px"}
 </div>
 
-<div class="c-project-callout c-project-callout--debug">
-
 ### Debugging
+
+<div class="c-project-callout c-project-callout--debug">
 
 **Debug**: If you see an error about `Bar()` or `chart.render()` being `not defined`:
 
@@ -73,4 +72,3 @@ chart.render()
 **Debug**: If you are not using the Raspberry Pi code editor, and the graph hasn't appeared when you run your code, replace `chart.render()` with `chart.render_in_browser()`.
 
 </div>
-

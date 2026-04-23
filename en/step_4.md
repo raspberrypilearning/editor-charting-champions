@@ -1,13 +1,16 @@
 <h2 class="c-project-heading--task">Large datasets</h2>
-### Step 1
 
 Load bigger datasets from a CSV file
 
+<h2 class="c-project-heading--explainer">Follow these instructions</h2>
+
+## Step 1
+
 The chart looks good, but nearly 150 nations have competed in the Olympics. Instead of typing them all, you can load the data from a file.
 
-<div class="c-project-callout c-project-callout--tip">
-
 ### CSV files
+
+<div class="c-project-callout c-project-callout--tip">
 
 CSV stands for **C**omma-**S**eparated **V**alue.
 There are several `.csv` files included in this starter project that contain the data you need for your charts.
@@ -21,7 +24,7 @@ Open `medals.csv` and look at the data in it. See how each line has a team name 
 
 You'll need to turn each line of `medals.csv` into a text string and a number in Python, like in the lists you made.
 
-### Step 2
+## Step 2
 
 Click on the **main.py** tab.
 
@@ -49,7 +52,7 @@ with open('medals.csv') as f:
         print(line)
 --- /code ---
 
-### Step 3
+## Step 3
 
 **Run** your code and look at the text it prints out in the **Text output** tab.
 
@@ -60,3 +63,7 @@ Notice that each line has two values, separated by commas.
 </div>
 
 **Debug:** If the code doesn't work, make sure you have indented it under the `with` line, like in the example above.
+
+## Now run your code
+
+Confirm the observable result.

@@ -1,7 +1,8 @@
 <h2 class="c-project-heading--task">Load CSV into chart</h2>
-### Step 1
 
 Use `int()` to convert a string to a number and load it into a chart
+
+<h2 class="c-project-heading--explainer">Follow these instructions</h2>
 
 Load your data into the chart as part of your `for` loop. `team` is a string, so it can be used as a label on the chart. `medals` is currently a string, but it needs to be converted to a number. You can use `int()` to do this.
 
@@ -25,17 +26,17 @@ with open('medals.csv') as f:
 
 **Tip:** You can now use `#` to turn `print(pieces)` into a comment too.
 
-### Step 2
+## Now run your code
 
-**Test:** Run your code and look at the chart it creates. Try hovering over some of the bars, or clicking on the names of teams to add and remove them from the chart.
+Look at the chart it creates. Try hovering over some of the bars, or clicking on the names of teams to add and remove them from the chart.
 
 <div class="c-project-output">
 ![A bar chart showing the medal counts of many nations. Information appears when the mouse hovers over a bar. Bars disappear as the names of nations are clicked.](images/adjust_chart.gif){:width="400px"}
 </div>
 
-<div class="c-project-callout c-project-callout--debug">
-
 ### Debugging
+
+<div class="c-project-callout c-project-callout--debug">
 
 If your chart is empty, check that you have `int(medals)` in your `chart.add()`.
 

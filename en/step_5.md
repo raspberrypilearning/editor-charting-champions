@@ -1,13 +1,16 @@
 <h2 class="c-project-heading--task">Split into lists</h2>
-### Step 1
 
 Use `split(',')` to make a new list item every time there is a comma
+
+<h2 class="c-project-heading--explainer">Follow these instructions</h2>
+
+## Step 1
 
 Each string that your loop prints is made up of two pieces separated by a comma. Your `chart.add()` function needs each of those pieces as separate inputs.
 
 The `split()` function breaks a string into a list, just like the lists you made earlier. The `split(',')` function makes a new list item every time it sees a comma.
 
-### Step 2
+## Step 2
 
 Put a `#` in front of the code that prints `line`. This will turn that code into a comment, so Python will ignore it.
 
@@ -28,15 +31,15 @@ with open('medals.csv') as f:
         print(pieces) # Print each list
 --- /code ---
 
-<div class="c-project-callout c-project-callout--tip">
-
 ### Tip
+
+<div class="c-project-callout c-project-callout--tip">
 
 You may notice that the second item has `\n` or `\r\n` at the end. This tells the computer it has reached the end of the line in a file.
 
 </div>
 
-### Step 3
+## Step 3
 
 **Run** your code and look at the text it prints out in the **Text output** tab. Each line should be a list with two items.
 
@@ -44,9 +47,9 @@ You may notice that the second item has `\n` or `\r\n` at the end. This tells th
 ![Many lists, each with two items, printed out.](images/tally.png){:width="400px"}
 </div>
 
-<div class="c-project-callout c-project-callout--debug">
-
 ### Debugging
+
+<div class="c-project-callout c-project-callout--debug">
 
 If your `pieces` are printing out as lists with only one item, check that you have `','` in the `()` of `line.split()`.
 
@@ -54,3 +57,6 @@ If you see a message about `split` being `not defined`, check that you have incl
 
 </div>
 
+## Now run your code
+
+Confirm the observable result.

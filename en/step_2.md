@@ -1,13 +1,10 @@
 <h2 class="c-project-heading--task">Add data</h2>
-### Step 1
 
 Get data into your chart
 
 <h2 class="c-project-heading--explainer">Add some data</h2>
 
 Python can store related data as a **list**. You can create lists by using square brackets `[]`. Items in a list are separated with commas.
-
-### Step 2
 
 Create three lists of data to show on your chart.
 
@@ -32,7 +29,6 @@ fr = ['France', 751]
 
 When you store something in a list, it gets an **index**. An index is a number that tells you an item's position in a list. List indexes start from `0`, instead of `1`.
 
-<h2 class="c-project-heading--explainer">Make lists</h2>
 
 You can get an item from a list by its index. For example, `my_list[3]` will get the **fourth** item in `my_list`, because indexes start at `0`.
 
@@ -53,20 +49,20 @@ chart.add(fr[0], fr[1])
 --- /code ---
 </div>
 
+## Now run your code
 
-**Test:** Run your code to see the chart.
+You should see the chart.
 
 <div class="c-project-output">
 ![A bar chart showing the medals won by the United States, Great Britain, and France.](images/short_list.png){:width="300px"}
 </div>
 
-<div class="c-project-callout c-project-callout--debug">
-
 ### Debugging
+
+<div class="c-project-callout c-project-callout--debug">
 
 **Debug**: If you see a message about an `IndexError`, your code is trying to get a value from a list index that doesn't exist (e.g. `us[2]`). To fix this:
  - Check each of your `chart.add` lines to be sure you are only using `0` and `1` as indexes.
  - Check the lines where you created your lists. Make sure each list has two items, separated by a comma.
 
 </div>
-

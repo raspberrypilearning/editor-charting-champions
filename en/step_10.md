@@ -1,36 +1,40 @@
 <h2 class="c-project-heading--task">Challenge</h2>
-### Step 1
 
 Upgrade your project with a pie chart
 
+<h2 class="c-project-heading--explainer">Follow these instructions</h2>
+
+## Step 1
 
 <div style="display: flex; flex-wrap: wrap">
 <div style="flex-basis: 200px; flex-grow: 1; margin-right: 15px;">
 In this step, change how your chart looks, or what data it uses.
 </div>
 <div>
+<div class="c-project-output">
 ![A pie chart showing the running time of Marvel films.](images/mcu_pie.png){:width="300px"}
+</div>
 </div>
 </div>
 
 ### Use a pie chart
 Try using a pie chart for a different look, or to show how something is divided.
 
-### Step 2
+## Step 2
 
 To create a pie chart instead of a bar chart, change the import from `pygal` to `Pie` instead of `Bar`. Do the same for the function you call to create `chart`.
 
 ### Use a different set of data
 You can load and chart any data that's in a `.csv` file with the program you've written.
 
-### Step 3
+## Step 3
 
 **Choose:** Pick a different datafile for your project. There are two available:
 
  - `mcu.csv` is the runtime and gross income from the Marvel Cinematic Universe films
  - `carbon.csv` is the total (thousands of tons) and per-person (tons) carbon dioxide emissions of different countries and regions
 
-### Step 4
+## Step 4
 
 Update the code that reads from `medals.csv` to read from your new file.
 
@@ -48,3 +52,7 @@ You can view the [completed project here](https://editor.raspberrypi.org/en/proj
 --- /collapse ---
 
 --- save ---
+
+## Now run your code
+
+Confirm the observable result.

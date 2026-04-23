@@ -1,10 +1,8 @@
 <h2 class="c-project-heading--task">Add new lists</h2>
-### Step 1
 
 Load two more teams by adding new lists and `chart.add()` calls.
 
 <h2 class="c-project-heading--explainer">Add new lists</h2>
-
 
 <div class="c-project-code">
 --- code ---
@@ -31,15 +29,17 @@ chart.add(ch[0], ch[1])
 --- /code ---
 </div>
 
-**Test:** Run your code to see the updated chart. Try clicking on the United States' name. Then watch the scale of the chart change.
+## Now run your code
+
+You should see the updated chart. Try clicking on the United States' name. Then watch the scale of the chart change.
 
 <div class="c-project-output">
 ![A bar chart showing the medals won by the United States, Great Britain, France, Germany, and China. When the United States' name is clicked, the tallest bar vanishes from the chart, which resizes.](images/short_list_2.gif){:width="300px"}
 </div>
 
-<div class="c-project-callout c-project-callout--debug">
-
 ### Debugging
+
+<div class="c-project-callout c-project-callout--debug">
 
 **Debug**: If you see a message about an `IndexError`, your code is trying to get a value from a list index that doesn't exist (e.g. `fr[2]`). To fix this:
  - Check each of your `chart.add` lines to be sure you are only using `0` and `1` as indexes.
@@ -47,7 +47,3 @@ chart.add(ch[0], ch[1])
 
 
 </div>
-
-
-
-
