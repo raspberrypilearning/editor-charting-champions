@@ -59,4 +59,4 @@ If you see a message about `split` being `not defined`, check that you have incl
 
 ## Now run your code
 
-Confirm the observable result.
+Run your code and check that each line in **Text output** is now shown as a list with two items.

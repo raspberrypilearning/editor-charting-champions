@@ -66,4 +66,4 @@ Notice that each line has two values, separated by commas.
 
 ## Now run your code
 
-Confirm the observable result.
+Run your code and check that the **Text output** shows the medal data printed one line at a time, with a comma in each line.

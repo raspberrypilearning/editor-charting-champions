@@ -72,4 +72,4 @@ So there's more to what it takes to win Olympic medals than just people and mone
 
 ## Now run your code
 
-Confirm the observable result.
+Run your code and check that the chart now shows GDP bars for the countries in the data.

@@ -55,4 +55,4 @@ You can view the [completed project here](https://editor.raspberrypi.org/en/proj
 
 ## Now run your code
 
-Confirm the observable result.
+Run your code and check that the chart now shows data from the new file you chose.

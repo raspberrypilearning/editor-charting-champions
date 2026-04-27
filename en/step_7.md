@@ -79,4 +79,4 @@ Hover the mouse over the biggest bars and notice which countries they belong to.
 
 ## Now run your code
 
-Confirm the observable result.
+Run your code and check that the chart shows population bars for the countries in the data.

@@ -8,4 +8,4 @@ Select the correct answer for each question in the quiz.
 
 ## Now run your code
 
-Confirm the observable result.
+Complete the quiz and check that you can choose an answer for each question.
