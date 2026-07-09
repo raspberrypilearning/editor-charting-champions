@@ -1,21 +1,25 @@
 ## Large datasets
 
-Load bigger datasets from a CSV file
+Load bigger datasets from a CSV file.
 
 The chart looks good, but nearly 150 nations have competed in the Olympics. Instead of typing them all, you can load the data from a file.
 
 > [!INFO]
 >
-> ### CSV files
+> ## CSV files
 >
 > CSV stands for **C**omma-**S**eparated **V**alues.
 > There are several `.csv` files included in this starter project that contain the data you need for your charts.
->
-> Open `medals.csv` and look at the data in it. See how each line has a team name and the number of medals they have won, separated by a comma.
+
+## Step 1
+
+Open `medals.csv` and look at the data in it. See how each line has a team name and the number of medals they have won, separated by a comma.
 
 ![The Raspberry Pi code editor with medals file highlighted and open, displaying a list of countries and medal numbers separated with a comma.](images/medals-tab.png)
 
 You'll need to turn each line of `medals.csv` into a text string and a number in Python, like in the lists you made.
+
+## Step 2
 
 Click on the **main.py** tab.
 
@@ -34,7 +38,9 @@ with open('medals.csv') as f:
         print(line)
 ```
 
-**Run** your code and look at the text it prints out in the **Text output** tab.
+## Now run your code
+
+Run your code and look at the text it prints out in the **Text output** tab.
 
 Notice that each line has two values, separated by commas.
 
