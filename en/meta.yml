@@ -6,8 +6,8 @@ description:
   of Olympic medals
 meta_title: Python coding projects for kids and teens | Charting champions
 meta_description: Learn Python with the Raspberry Pi Foundation's coding projects for kids and teens. Discover the power of lists in Python by creating a chart of Olympic medals.
-version: 4 
-listed: false
+version: 4
+listed: true
 copyedit: true
 last_tested: "2021-10-07"
 landing: true
@@ -24,12 +24,6 @@ steps:
       - internal
   - title: Investigating data
   - title: GDP data
-  - title: Quick quiz
-    knowledge_quiz:
-      path: quiz1
-      version: 1
-      questions: 3
-      passing_score: 3
     completion:
       - external
   - title: Challenge
