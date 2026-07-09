@@ -1,6 +1,6 @@
 ## Split into lists
 
-Use `split(',')` to make a new list item every time there is a comma
+Use `split(',')` to make a new list item every time there is a comma.
 
 Each string that your loop prints is made up of two pieces separated by a comma. Your `chart.add()` function needs each of those pieces as separate inputs.
 
@@ -22,7 +22,9 @@ with open('medals.csv') as f:
 >
 > You may notice that the second item has `\n` or `\r\n` at the end. This tells the computer it has reached the end of the line in a file.
 
-**Run** your code and look at the text it prints out in the **Text output** tab. Each line should be a list with two items.
+## Now run your code
+
+Run your code and look at the text it prints out in the **Text output** tab. Each line should be a list with two items.
 
 ![Many lists, each with two items, printed out.](images/tally.png){:width="400px"}
 

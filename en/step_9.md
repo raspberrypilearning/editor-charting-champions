@@ -1,6 +1,6 @@
 ## Challenge
 
-Upgrade your project with a pie chart
+Upgrade your project with a pie chart.
 
 In this step, change how your chart looks, or what data it uses.
 
@@ -22,8 +22,8 @@ In this step, change how your chart looks, or what data it uses.
 >
 > Pick a different datafile for your project. There are two available:
 >
-> - `mcu.csv` is the runtime and gross income from the Marvel Cinematic Universe films
-> - `carbon.csv` is the total (thousands of tons) and per-person (tons) carbon dioxide emissions of different countries and regions
+>  - `mcu.csv` is the runtime and gross income from the Marvel Cinematic Universe films
+>  - `carbon.csv` is the total (thousands of tons) and per-person (tons) carbon dioxide emissions of different countries and regions
 >
 > Update the code that reads from `medals.csv` to read from your new file.
 >

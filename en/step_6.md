@@ -1,6 +1,6 @@
 ## Load CSV into chart
 
-Use `int()` to convert a string to a number and load it into a chart
+Use `int()` to convert a string to a number and load it into a chart.
 
 Load your data into the chart as part of your `for` loop. `team` is a string, so it can be used as a label on the chart. `medals` is currently a string, but it needs to be converted to a number. You can use `int()` to do this.
 
@@ -19,6 +19,8 @@ with open('medals.csv') as f:
 >
 > You can now use `#` to turn `print(pieces)` into a comment too.
 
+## Now run your code
+
 Run your code and look at the chart it creates. Try hovering over some of the bars, or clicking on the names of teams to add and remove them from the chart.
 
 ![A bar chart showing the medal counts of many nations. Information appears when the mouse hovers over a bar. Bars disappear as the names of nations are clicked.](images/adjust_chart.gif){:width="400px"}
@@ -28,7 +30,6 @@ Run your code and look at the chart it creates. Try hovering over some of the ba
 > If your chart is empty, check that you have `int(medals)` in your `chart.add()`.
 >
 > If you see a message about an `IndexError`, your code is trying to get a value from a list index that doesn't exist (e.g. `pieces[2]`). To fix this:
->
-> - Check each of your `team` and `medals` variables to be sure you are only using `0` and `1` as indexes.
-> - Check the printed `pieces` lists to be sure they have two items: `['Tonga', '1\n']`, not `['Tonga,1\n']`. If they don't, then check that you have `','` in the `()` of `line.split()`.
-> - Check you do not have a blank line at the bottom of your .csv file.
+>  - Check each of your `team` and `medals` variables to be sure you are only using `0` and `1` as indexes.
+>  - Check the printed `pieces` lists to be sure they have two items: `['Tonga', '1\n']`, not `['Tonga,1\n']`. If they don't, then check that you have `','` in the `()` of `line.split()`.
+>  - Check you do not have a blank line at the bottom of your .csv file.

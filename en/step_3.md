@@ -15,7 +15,10 @@ chart.add(gb[0], gb[1])
 chart.add(fr[0], fr[1])
 chart.add(ge[0], ge[1])
 chart.add(ch[0], ch[1])
+
 ```
+
+## Now run your code
 
 Run your code to see the updated chart. Try clicking on the United States' name. Then watch the scale of the chart change.
 
@@ -24,6 +27,5 @@ Run your code to see the updated chart. Try clicking on the United States' name.
 > [!DEBUG]
 >
 > If you see a message about an `IndexError`, your code is trying to get a value from a list index that doesn't exist (e.g. `fr[2]`). To fix this:
->
-> - Check each of your `chart.add` lines to be sure you are only using `0` and `1` as indexes.
-> - Check the lines where you created your lists. Make sure each list has two items, separated by a comma.
+>  - Check each of your `chart.add` lines to be sure you are only using `0` and `1` as indexes.
+>  - Check the lines where you created your lists. Make sure each list has two items, separated by a comma.

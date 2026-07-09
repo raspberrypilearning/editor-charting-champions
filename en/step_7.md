@@ -1,28 +1,30 @@
 ## Investigating data
 
-Use different files to compare data
+Use different files to compare data.
 
 Now your program can draw charts from files of data. You can use it on different files to compare their charts to see what you can learn.
 
-![A bar chart showing the populations of many nations. Information appears when the mouse hovers over a bar. Bars disappear as the names of nations are clicked.](images/adjust_chart.gif){:width="300px"}
-
-### Who has the most medals?
-
-Look at the chart you've made. The taller a bar is, the more medals that team has won. Hover the mouse over some of the tallest bars and notice which teams they belong to.
-
-![A bar chart showing the populations of many nations. Information appears when the mouse hovers over a bar. Bars disappear as the names of nations are clicked.](images/adjust_chart.gif){:width="500px"}
-
-Why might they have the most medals?
-
-A good idea might be to look at both the population and wealth of teams, to see if there is any sort of pattern.
+![A bar chart showing the medals won by many nations. Information appears when the mouse hovers over a bar. Bars disappear as the names of nations are clicked.](images/adjust_chart.gif){:width="300px"}
 
 > [!INFO]
 >
-> **Data analysis:** People have done these kinds of investigations since long before computers were invented. For example, in the 1850s, Florence Nightingale, a nurse, used charts and graphs to show the importance of disease prevention in caring for the sick.
+> ## Who has the most medals?
+>
+> Look at the chart you've made. The taller a bar is, the more medals that team has won. Hover the mouse over some of the tallest bars and notice which teams they belong to.
+>
+> ![A bar chart showing the medals won by many nations. Information appears when the mouse hovers over a bar. Bars disappear as the names of nations are clicked.](images/adjust_chart.gif){:width="500px"}
+>
+> Why might they have the most medals?
+>
+> A good idea might be to look at both the population and wealth of teams, to see if there is any sort of pattern.
+
+> [!INFO]
+>
+> ## Data analysis
+>
+> People have done these kinds of investigations since long before computers were invented. For example, in the 1850s, Florence Nightingale, a nurse, used charts and graphs to show the importance of disease prevention in caring for the sick.
 >
 > ![Florence Nightingale's chart of causes of mortality.](images/nightingale.jpeg){:width="300px"}
-
-### Population sizes
 
 A file, called `pop.csv`, with data on the populations of different countries, is part of the starter project. Because the data in `pop.csv` is also made up of a text string and a number, you can re-use your code with only small changes.
 
@@ -41,6 +43,8 @@ with open('pop.csv') as f:
         population = pieces[1]
         chart.add(team, int(population))  # Make population a number
 ```
+
+## Now run your code
 
 Now run your program and look at the chart it draws.
 
