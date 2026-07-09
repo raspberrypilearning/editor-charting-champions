@@ -2,8 +2,6 @@
 
 Use different files to compare data
 
-## Investigate with data
-
 Now your program can draw charts from files of data. You can use it on different files to compare their charts to see what you can learn.
 
 ![A bar chart showing the populations of many nations. Information appears when the mouse hovers over a bar. Bars disappear as the names of nations are clicked.](images/adjust_chart.gif){:width="300px"}

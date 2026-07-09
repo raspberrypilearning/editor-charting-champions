@@ -27,7 +27,7 @@ In this step, change how your chart looks, or what data it uses.
 >
 > Update the code that reads from `medals.csv` to read from your new file.
 >
-> These files have more than one column of numbers. Use indexes on the `tally` list to choose which to add to your chart.
+> These files have more than one column of numbers. Use indexes on the `pieces` list to choose which to add to your chart.
 >
 > The carbon dioxide data uses numbers with decimals. To convert them from text strings, you'll need to use `float()` instead of `int()`.
 

@@ -8,7 +8,7 @@ The chart looks good, but nearly 150 nations have competed in the Olympics. Inst
 >
 > ### CSV files
 >
-> CSV stands for **C**omma-**S**eparated **V**alue.
+> CSV stands for **C**omma-**S**eparated **V**alues.
 > There are several `.csv` files included in this starter project that contain the data you need for your charts.
 >
 > Open `medals.csv` and look at the data in it. See how each line has a team name and the number of medals they have won, separated by a comma.
